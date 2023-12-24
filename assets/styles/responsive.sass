@@ -1,0 +1,396 @@
+@import './styles.sass'
+
+@media only screen and ( max-width:  1300px)
+  .wrapper
+    max-width: 1200px
+
+@media only screen and ( max-width:  1200px)
+  .wrapper
+    max-width: 1100px
+
+  /***********      all-vendors      ***********/
+  .all-vendors
+    .list
+      @include grid($columns: 1fr 1fr 1fr)
+
+@media only screen and ( max-width:  1100px)
+  .wrapper
+    max-width: 1000px
+
+@media only screen and ( max-width:  1000px)
+  .wrapper
+    max-width: 800px
+
+  /***********      title      ***********/
+  .title
+    font-size: 27px
+
+  .tab-btns
+    overflow-x: auto
+    justify-content: flex-start
+
+  /***********      Header      ***********/
+  header
+    padding: 1rem 0
+
+    .wrapper
+      @include grid($columns: 1fr 1fr)
+      @include flex($justify: space-between)
+
+      .nav-links
+        display: none
+
+      .login-signup-btns
+        display: none
+
+      .side-nav-btn
+        display: flex
+
+  /***********      checkout-app-features      ***********/
+  .checkout-app-features
+    @include grid($columns: 1fr)
+
+    .image-sec
+      img
+        width: 100%
+        height: auto
+
+  /***********      blog      ***********/
+  .blog
+    .swiper-pagination
+      position: absolute
+      left: 50%
+      top: 72%
+
+      span
+        transform: translateX(-50%)
+
+    .swiper-slide
+      .item
+        .details
+          max-width: 100%
+
+          h2
+            font-size: 24px
+
+          p
+            margin-bottom: 1rem
+
+  /***********      all-vendors      ***********/
+  .all-vendors
+    .list
+      @include grid($columns: 1fr 1fr )
+
+  /***********      vendor-details      ***********/
+  .vendor-details
+    .details
+      @include grid($columns: 1fr 1fr)
+
+  /******************      product-details      ********************/
+  .product-details
+    .product-area
+      @include grid($columns: 1fr)
+
+      .product-details-area
+        .name
+          font-size: 20px
+
+      .images-area
+        @include flex($justify: flex-start)
+        flex-direction: column
+        align-items: flex-start
+        display: grid
+
+        .all-images
+          margin-right: 10px
+          @include flex($justify: flex-start)
+          flex-direction: row
+          grid-area: 2
+
+          img
+            margin-right: 10px
+            margin-bottom: 0
+
+  /***********      blog-page      ***********/
+  .blog-page
+    .all-blog
+      @include grid($columns: 1fr)
+
+      .recent-post, .best-rooms
+        .title-sec
+          margin-bottom: 10px
+
+        .list
+          .item
+            margin-bottom: .5rem
+
+            .image
+              width: 200px
+
+            .details
+              width: 100%
+              padding: 0 .5rem
+
+              p
+                font-size: 12px
+
+              .name-sec
+                .name
+                  h4
+                    font-size: 15px
+
+@media only screen and ( max-width:  900px)
+  /***********      Banner      ***********/
+  .banner
+    .swiper-slide
+      .slider-bg
+        display: block
+
+      .image-sec
+        display: none
+
+      .item
+        @include grid(1fr)
+
+        .details
+          color: $light
+          max-width: 100%
+
+        .empty-div
+          display: none
+
+  /***********      vendor-details      ***********/
+  .vendor-details
+    .all-images
+      display: grid
+      grid-template-areas: 'img1 img1 img1 img2' 'img3 img3 img4 img4' 'img5 img5 img6 img6'
+
+@media only screen and ( max-width:  800px)
+  .wrapper
+    max-width: 600px
+
+  /***********      short-intro      ***********/
+  .short-intro
+    @include grid($columns: 1fr)
+
+  /***********      templates      ***********/
+  .templates
+    .view-all-btn
+      text-align: center
+      margin-top: 1rem
+
+      button
+        @include button()
+        text-align: center
+
+    .list
+      @include grid($columns: 1fr 1fr)
+      grid-gap: 0
+
+      .item
+        margin: 5px 5px 0
+
+  /***********      footer      ***********/
+  footer
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /******************      contact-page      ********************/
+  .contact-page
+    .contact-form
+      padding: 1rem
+
+      .form-area
+        .groups
+          @include grid($columns: 1fr)
+
+  /******************      login-sign-up-page      ********************/
+  .login-sign-up-page
+    .form-area
+      max-width: 450px
+      @include grid($columns: 1fr)
+
+      .image-area
+        display: none
+
+      .form-input-area
+        padding: 1.5rem
+
+  /***********      vendor-details      ***********/
+  .vendor-details
+    .details
+      @include grid($columns: 1fr)
+
+  /******************      feed-page      ********************/
+  .feed-page
+    @include flex($justify: space-between)
+    align-items: flex-start
+    margin: 1rem 0
+
+    .categories-sec
+      position: fixed
+      left: -300px
+      width: 220px
+      @include trans()
+      z-index: 20
+      box-shadow: 0 4px 10px rgba($black, .1)
+      height: 97vh
+      background-color: $light
+      border-radius: 10px
+
+      &.active
+        left: 10px
+
+    .all-categories
+      height: 100%
+
+      .cate-title
+        .cate-close
+          display: block
+          color: $price
+          @include flex($justify: center)
+
+          i
+            font-size: 18px
+
+    .feed-section
+      width: 100%
+
+      .filter-btn
+        display: block
+
+        h4
+          font-size: 18px
+          font-weight: 400
+
+          i
+            font-size: 14px
+
+@media only screen and ( max-width:  600px)
+  .tab-btns
+    overflow-x: auto
+    justify-content: flex-start
+
+    li
+      font-size: 13px
+
+  .wrapper
+    max-width: 400px
+    padding: 0 20px
+
+  /***********      title      ***********/
+  .title
+
+    h4
+      font-size: 13px
+      font-weight: 500
+      font-weight: 600
+      margin-bottom: -4px
+
+    h2
+      font-size: 22px
+      font-weight: 300
+
+  /***********      Banner      ***********/
+  .banner
+    .swiper-slide
+      .item
+        .details
+          h2
+            font-size: 25px
+
+          h5
+            font-size: 16px
+
+          button
+            padding: .5rem .8rem
+            font-size: 14px
+
+  /***********      templates      ***********/
+  .templates
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /***********      your-planning      ***********/
+  .your-planning
+    .details
+      padding: 0 .5rem
+      h2
+        font-size: 34px
+
+  /***********      blog      ***********/
+  .blog
+    .swiper-slide
+      .item
+        .details
+          h2
+            font-size: 20px
+
+          p
+            font-size: 16px
+            line-height: 1.6rem
+
+  /***********      faq      ***********/
+  .faq
+    .faq-area
+      max-width: 600px
+      margin: 0 auto
+
+      ul
+        li
+          img
+            height: 20px
+            width: 20px
+            margin-right: 6px
+
+          .title-sec
+            font-size: 15px
+
+  /***********      footer      ***********/
+  footer
+    .list
+      @include grid($columns: 1fr)
+
+  /***********      all-vendors      ***********/
+  .all-vendors
+    .list
+      @include grid($columns: 1fr)
+
+  /******************      contact-page      ********************/
+  .contact-page
+    @include grid($columns: 1fr)
+
+    .contact-form
+      padding: 1rem
+
+      .form-area
+        .groups
+          @include grid($columns: 1fr)
+
+  /***********      blog-page      ***********/
+  .blog-page
+    .all-blog
+      .blog-post, .blog-details-post
+        .item
+          margin-bottom: 1rem
+
+          .blog-image
+            height: 200px
+
+      .blog-details-post
+        .item
+          .blog-image
+            margin-bottom: 20px
+
+      .leave-comment
+        .booking-form
+          .form-inputs
+            .input-group
+              flex-direction: column
+
+              .group
+                width: 100%
+                margin-bottom: 2rem
+
+                &:nth-last-child(1)
+                  margin-bottom: 0

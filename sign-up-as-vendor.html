@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Website</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/styles/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./assets/styles/swiper.min.css" />
+    <!-- jquery -->
+    <script src="./assets/js/jquery.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <div
+      class="login-sign-up-page"
+      style="background-image: url(./assets/images/bg.png)"
+    >
+      <div class="form-area">
+        <div class="home-btn">
+          <a href="index.html">
+            <button>
+              <img src="./assets/icon/clarity_home-solid.svg" alt="" />
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="image-area"
+          style="background-image: url(./assets/images/login.png)"
+        >
+          <h2>Welcome to Wedding Website</h2>
+        </div>
+
+        <div class="form-input-area">
+          <form action="">
+            <div class="form">
+              <h2>Sign Up As Vendor</h2>
+
+              <div class="input-groups-section">
+                <div class="inner-group">
+                  <div class="input-groups">
+                    <div class="group">
+                      <div class="icon">
+                        <img src="./assets/icon/bxs_user-circle.svg" alt="" />
+                      </div>
+
+                      <input type="text" name="vendor" value="Vendor" hidden />
+
+                      <input
+                        onchange="getData(this)"
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                      />
+                      <label
+                        class="form-input-label"
+                        name="firstName"
+                        for="firstName"
+                        >First Name</label
+                      >
+                      <div class="line"></div>
+                    </div>
+
+                    <div class="group">
+                      <div class="icon">
+                        <img src="./assets/icon/Password.svg" alt="" />
+                      </div>
+                      <input
+                        onchange="getData(this)"
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                      />
+                      <label
+                        class="form-input-label"
+                        name="lastName"
+                        for="lastName"
+                        >Last Name</label
+                      >
+                      <div class="line"></div>
+                    </div>
+
+                    <button class="submit-btn" id="next-btn">Next</button>
+                  </div>
+
+                  <div class="input-groups">
+                    <div class="group">
+                      <div class="icon">
+                        <img src="./assets/icon/dashicons_email.svg" alt="" />
+                      </div>
+                      <input
+                        onchange="getData(this)"
+                        type="email"
+                        name="email"
+                        id="email"
+                      />
+                      <label class="form-input-label" name="email" for="email"
+                        >Email Address</label
+                      >
+                      <div class="line"></div>
+                    </div>
+
+                    <div class="group">
+                      <div class="icon">
+                        <img
+                          src="./assets/icon/carbon_phone-filled.svg"
+                          alt=""
+                        />
+                      </div>
+                      <input
+                        onchange="getData(this)"
+                        type="number"
+                        name="number"
+                        id="number"
+                      />
+                      <label class="form-input-label" name="number" for="number"
+                        >Mobile Number</label
+                      >
+                      <div class="line"></div>
+                    </div>
+
+                    <div class="button-group">
+                      <button id="prev-btn" class="submit-btn">Prev</button>
+                      <button id="next-btn" class="submit-btn">Next</button>
+                    </div>
+                  </div>
+
+                  <div class="input-groups">
+                    <div class="group">
+                      <div class="icon">
+                        <img src="./assets/icon/Password.svg" alt="" />
+                      </div>
+                      <input
+                        onchange="getData(this)"
+                        type="password"
+                        name="password"
+                        id="password"
+                      />
+                      <label
+                        class="form-input-label"
+                        name="password"
+                        for="password"
+                        >Password</label
+                      >
+                      <div class="line"></div>
+                    </div>
+
+                    <div class="group">
+                      <div class="icon">
+                        <img src="./assets/icon/Password.svg" alt="" />
+                      </div>
+                      <input
+                        onchange="getData(this)"
+                        type="password"
+                        name="confirmPassword"
+                        id="confirmPassword"
+                      />
+                      <label
+                        class="form-input-label"
+                        name="confirmPassword"
+                        for="confirmPassword"
+                        >Confirm Password</label
+                      >
+                      <div class="line"></div>
+                    </div>
+
+                    <div class="button-group">
+                      <button id="prev-btn" class="submit-btn">Prev</button>
+                      <button class="submit-btn">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="or">OR</div>
+
+          <a href="sign-up.html">
+            <button class="sign-up-as">
+              <i class="fas fa-user"></i> Sign Up As User
+            </button>
+          </a>
+
+          <p class="account-have">
+            Already have an account? <a href="login.html">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./assets/js/scripts.js"></script>
+</html>

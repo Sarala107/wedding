@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Website</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/styles/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./assets/styles/swiper.min.css" />
+    <!-- jquery -->
+    <script src="./assets/js/jquery.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <h3>LOGO</h3>
+        </div>
+
+        <ul class="nav-links">
+          <li>
+            <a href="feed.html">
+              <button class="nav-btn">Feed</button>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html">
+              <button class="nav-btn">Home</button>
+            </a>
+          </li>
+
+          <li>
+            <a href="templates.html">
+              <button class="nav-btn">Wedding Website</button>
+            </a>
+          </li>
+
+          <li>
+            <a href="vendors.html">
+              <button class="nav-btn active">Vendor</button>
+            </a>
+          </li>
+
+          <li>
+            <a href="registry.html">
+              <button class="nav-btn">Registry</button>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="blog.html">
+              <button class="nav-btn">Blog</button>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="contact.html">
+              <button class="nav-btn">Contact</button>
+            </a>
+          </li>
+        </ul>
+
+        <div class="login-signup-btns">
+          <div class="login-btn">
+            <a href="login.html">
+              <button class="link">Login</button>
+            </a>
+          </div>
+
+          <div class="sign-up-btn">
+            <a href="sign-up.html">
+              <button class="link">Sign up</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="side-nav-btn">
+          <div class="das"></div>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="cursor"></div>
+
+    <div class="background"></div>
+
+    <!-- side-nav-start -->
+    <div class="side-nav">
+      <div class="side-nav-close-btn">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+
+      <div class="logo">
+        <a href="index.html">
+          <h3>LOGO</h3>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="feed.html">
+            <button class="nav-btn">Feed</button>
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html">
+            <button class="nav-btn">Home</button>
+          </a>
+        </li>
+
+        <li>
+          <a href="templates.html">
+            <button class="nav-btn">Wedding Website</button>
+          </a>
+        </li>
+
+        <li>
+          <a href="vendors.html">
+            <button class="nav-btn active">Vendor</button>
+          </a>
+        </li>
+
+        <li>
+          <a href="registry.html">
+            <button class="nav-btn">Registry</button>
+          </a>
+        </li>
+
+        <!-- <li>
+          <a href="blog.html">
+            <button class="nav-btn">Blog</button>
+          </a>
+        </li> -->
+
+        <li>
+          <a href="contact.html">
+            <button class="nav-btn">Contact</button>
+          </a>
+        </li>
+      </ul>
+
+      <div class="login-signup-btns">
+        <div class="login-btn">
+          <a href="login.html">
+            <button class="link">Login</button>
+          </a>
+        </div>
+
+        <div class="sign-up-btn">
+          <a href="sign-up.html">
+            <button class="link">Sign up</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- side-nav-end -->
+
+    <!-- all-vendors-start -->
+    <section>
+      <div class="wrapper">
+        <div class="all-vendors">
+          <div class="title">
+            <h4>Preview</h4>
+            <h2>Kick Things Off With These Designs</h2>
+          </div>
+
+          <ul class="tab-btns">
+            <li class="icon active" data-filters="data-Photographers">
+              <img src="./assets/icon/camera.png" alt="" />
+              Photographers
+            </li>
+            <li class="icon" data-filters="data-videographers">
+              <img src="./assets/icon/vcamera.png" alt="" />
+              Videographers
+            </li>
+            <li class="icon" data-filters="data-beauty">
+              <img src="./assets/icon/beauty.png" alt="" /> Beauty
+            </li>
+            <li class="icon" data-filters="data-bands">
+              <img src="./assets/icon/music.png" alt="" /> Bands & DJs
+            </li>
+            <li class="icon" data-filters="data-bar-services">
+              <img src="./assets/icon/bar.png" alt="" /> Bar Services
+            </li>
+            <li class="icon" data-filters="data-caterers">
+              <img src="./assets/icon/food.png" alt="" /> Caterers
+            </li>
+            <li class="icon" data-filters="data-cakes-dresserts">
+              <img src="./assets/icon/cake.png" alt="" />
+              Cakes & Dresserts
+            </li>
+            <li class="icon" data-filters="data-Boutique">
+              <img src="./assets/icon/dress.png" alt="" />
+              Boutique
+            </li>
+          </ul>
+
+          <div class="list">
+            <div class="item boxItem data-Boutique data-videographers">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor1.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item boxItem data-Photographers">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor1.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item boxItem data-beauty">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor2.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item boxItem data-Photographers">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor3.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item boxItem data-bands">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor4.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item boxItem data-bar-services">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor5.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item boxItem data-cakes-dresserts">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor6.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item boxItem data-Photographers">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor7.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item boxItem data-caterers">
+              <div class="image-sec">
+                <img src="./assets/images/vendors/vendor8.png" alt="" />
+              </div>
+
+              <div class="details">
+                <a href="vendor-details.html">
+                  <h4 class="name">
+                    Luxury Everest Trek fly back by helicopter
+                  </h4>
+                </a>
+
+                <div class="rating">
+                  <div class="stars" data-value="2"></div>
+
+                  <p>5.0 (3) South Casco, ME</p>
+                </div>
+
+                <p>Up to 200 Guests</p>
+
+                <a href="vendor-details.html">
+                  <button class="custom-button">
+                    View
+                    <div class="bob"></div>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- all-vendors-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <div class="logo">
+              <h2>logo</h2>
+            </div>
+
+            <p>For all the days along the way</p>
+
+            <div class="social-media">
+              <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+
+              <div class="icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+
+              <div class="icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+
+              <div class="icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+
+            <div class="copy-right">© Copyright 2022</div>
+          </div>
+
+          <div class="item">
+            <ul>
+              <li class="footer-title">About Us</li>
+
+              <li>
+                <a href="#"> Our Story </a>
+              </li>
+
+              <li>
+                <a href="#"> Press </a>
+              </li>
+
+              <li>
+                <a href="#"> Jobs </a>
+              </li>
+
+              <li>
+                <a href="#"> Wedding Vendors </a>
+              </li>
+
+              <li>
+                <a href="#"> Refer A Friend </a>
+              </li>
+
+              <li>
+                <a href="#"> Reviews </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <ul>
+              <li class="footer-title">Help</li>
+              <li>
+                <a href="#"> Expert Advice </a>
+              </li>
+
+              <li>
+                <a href="#"> Find A Couple </a>
+              </li>
+
+              <li>
+                <a href="#"> FAQs </a>
+              </li>
+
+              <li>
+                <a href="#"> Track Order </a>
+              </li>
+
+              <li>
+                <a href="#"> Start A Return </a>
+              </li>
+
+              <li>
+                <a href="#"> Return Policy </a>
+              </li>
+
+              <li>
+                <a href="#"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+
+    <script src="./assets/js/scripts.js"></script>
+
+    <script>
+      const stars = document.querySelectorAll(".stars");
+
+      const fullStar = `
+  <svg
+    width="17"
+    height="15"
+    viewBox="0 0 17 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.54896 0.927053C7.84831 0.00574255 9.15172 0.00574017 9.45107 0.927051L10.5588 4.33631C10.6927 4.74834 11.0766 5.0273 11.5099 5.0273H15.0946C16.0633 5.0273 16.4661 6.26691 15.6824 6.83631L12.7823 8.94335C12.4318 9.198 12.2851 9.64937 12.419 10.0614L13.5267 13.4706C13.8261 14.392 12.7716 15.1581 11.9879 14.5887L9.0878 12.4816C8.73732 12.227 8.26272 12.227 7.91223 12.4816L5.01214 14.5887C4.22843 15.1581 3.17395 14.392 3.4733 13.4707L4.58103 10.0614C4.71491 9.64937 4.56825 9.198 4.21776 8.94336L1.31767 6.83632C0.533959 6.26691 0.936732 5.0273 1.90546 5.0273H5.49017C5.92339 5.0273 6.30735 4.74834 6.44122 4.33631L7.54896 0.927053Z"
+      fill="#E28800"
+    />
+  </svg>
+`;
+
+      const blankStar = `
+  <svg
+    width="16"
+    height="15"
+    viewBox="0 0 16 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.18947 1.08156C7.33914 0.620903 7.99085 0.620908 8.14052 1.08156L9.24826 4.49082C9.44907 5.10886 10.025 5.5273 10.6748 5.5273H14.2596C14.7439 5.5273 14.9453 6.14711 14.5535 6.4318L11.6534 8.53885C11.1276 8.92081 10.9076 9.59786 11.1084 10.2159L12.2162 13.6252C12.3659 14.0858 11.8386 14.4689 11.4468 14.1842L8.54667 12.0771C8.02094 11.6952 7.30905 11.6952 6.78332 12.0771L3.88323 14.1842C3.49137 14.4689 2.96413 14.0858 3.1138 13.6252L4.22154 10.2159C4.42235 9.59787 4.20236 8.92081 3.67663 8.53885L0.776543 6.43181C0.384683 6.1471 0.586076 5.5273 1.07043 5.5273H4.65515C5.30498 5.5273 5.88092 5.10886 6.08173 4.49082L7.18947 1.08156Z"
+      stroke="#8D8D8D"
+    />
+  </svg>
+`;
+
+      stars.forEach((star, index) => {
+        let value = star.dataset.value;
+        let allStars = [];
+
+        for (let i = 0; i < value; i++) {
+          allStars.push(fullStar);
+        }
+
+        for (let j = 0; j < 5; j++) {
+          if (allStars.length != 5) {
+            allStars.push(blankStar);
+          }
+        }
+
+        stars[index].innerHTML =
+          allStars[0] + allStars[1] + allStars[2] + allStars[3] + allStars[4];
+      });
+
+      // all-vendors
+      $(document).ready(function () {
+        $(".boxItem").not(".data-Photographers").hide("1000");
+      });
+
+      $(document).ready(function () {
+        $(".all-vendors ul li").click(function () {
+          const value = $(this).attr("data-filters");
+          $(".boxItem")
+            .not("." + value)
+            .hide("1000");
+          $(".boxItem")
+            .filter("." + value)
+            .show("1000");
+        });
+
+        $(".all-vendors ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
